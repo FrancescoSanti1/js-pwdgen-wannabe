@@ -4,6 +4,8 @@
 let nome;
 let cognome;
 let colore;
+let numero = 21;
+let nuovaPassword;
 
 // chiedo all'utente il suo nome
 nome = prompt("Qual è il tuo nome?");
@@ -15,13 +17,18 @@ cognome = prompt("Qual è il tuo cognome?");
 colore = prompt("Qual è il tuo colore preferito?");
 
 // debug
-/* console.log(
+/*console.log(
     `
     ${nome}
     ${cognome}
     ${colore}
+    ${numero}
     `
-); */
+);*/
+
+nuovaPassword = nome+cognome+colore+numero;
+
+// console.log(nuovaPassword);
 
 // stampo a schermo la password assegnata all'utente
-document.getElementById("pwd-generata").innerHTML=`La password assegnata &egrave;: ${nome}${cognome}${colore}21`;
+document.getElementById("pwd-generata").innerHTML=`La password assegnata &egrave;: ${nuovaPassword}`;
